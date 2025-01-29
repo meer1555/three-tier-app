@@ -34,6 +34,8 @@ services:
       - frontend_data:/app
     networks:
       - app_network
+    env_file:
+      - ./frontend/ENV.env
     stdin_open: true
     tty: true
 
